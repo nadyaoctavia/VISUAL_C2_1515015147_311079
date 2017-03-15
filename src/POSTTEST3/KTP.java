@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package POSTTEST3;
+package POSTTEST3; // mengelompokkan kelas 
 
-import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImage; 
 import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
+import java.io.IOException; // untuk mengetahui kesalahan
+import javax.imageio.ImageIO; // menghasilkan file dgn salah satu format gambar
+import javax.swing.ImageIcon; //menghasilkan file
+import javax.swing.JFileChooser; // membuat file 
 
 /**
  *
@@ -22,7 +22,7 @@ public class KTP extends javax.swing.JFrame {
      * Creates new form percobaan3
      */
     public KTP() {
-        initComponents();
+        initComponents(); // untuk menyambung ke class output
     }
 
     /**
@@ -831,16 +831,16 @@ public class KTP extends javax.swing.JFrame {
 
     private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
         // TODO add your handling code here:
-        jhome.setVisible(true);
-        jregister.setVisible(false);
-        jabout.setVisible(false);
+        jhome.setVisible(true); // panel tertampil
+        jregister.setVisible(false); // panel tidak tertampil
+        jabout.setVisible(false); // panel tidak tertampil
     }//GEN-LAST:event_homeActionPerformed
 
     private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
         // TODO add your handling code here:
-        jregister.setVisible(true);
-        jhome.setVisible(false);
-        jabout.setVisible(false);
+        jregister.setVisible(true); // panel tertampil
+        jhome.setVisible(false); // panel tidak tertampil
+        jabout.setVisible(false); // panel tidak tertampil
     }//GEN-LAST:event_registerActionPerformed
 
     private void keluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarActionPerformed
@@ -850,14 +850,14 @@ public class KTP extends javax.swing.JFrame {
 
     private void keluarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_keluarMouseClicked
         // TODO add your handling code here:
-         System.exit(0);
+         System.exit(0); // kelua dari running frame
     }//GEN-LAST:event_keluarMouseClicked
 
     private void aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutActionPerformed
         // TODO add your handling code here:
-        jabout.setVisible(true);
-        jhome.setVisible(false);
-        jregister.setVisible(false);
+        jabout.setVisible(true); // panel tertampil
+        jhome.setVisible(false); // panel tidak tertampil
+        jregister.setVisible(false); // panel tidak tertampil
     }//GEN-LAST:event_aboutActionPerformed
 
     private void cusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cusActionPerformed
@@ -901,25 +901,26 @@ public class KTP extends javax.swing.JFrame {
         boxagama.setSelectedItem(false);
         boxgoldar.setSelectedItem(false);
         boxstatus.setSelectedItem(false);
+        // mereset atau menormalkan kembali layar yang telah terisi secara otomatis
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-                output tampil = new output();
-        output.namaout.setText(this.teksnama.getText());
-        output.tempatout.setText(this.tekstempat.getText());
+                output tampil = new output(); // untuk menghubung ke frame output
+        output.namaout.setText(this.teksnama.getText()); // mengambil isi dari nama lalu terhubung ke frame output 
+        output.tempatout.setText(this.tekstempat.getText());  // mengambil isi dari tempat lalu terhubung ke frame output 
         
-        output.tanggalout.setText(this.tekstanggal.getText());
-        output.alamatout.setText(this.teksalamat.getText());
-        output.rtout.setText(this.teksrt.getText());
-        output.tfRW1.setText(this.teksrw.getText());
-        output.kelout.setText(this.tekskel.getText());
-        output.kecout.setText(this.tekskec.getText());
-        output.kotaout.setText(this.tekskota.getText());
-        output.agamaout.setText(this.boxagama.getSelectedItem().toString());
-        output.statusout.setText(this.boxstatus.getSelectedItem().toString());
-        output.goldarout.setText(this.boxgoldar.getSelectedItem().toString());
-        output.pekerjaanout.setText(this.tekspekerjaan.getText());
+        output.tanggalout.setText(this.tekstanggal.getText());  // mengambil isi dari tanggal lalu terhubung ke frame output 
+        output.alamatout.setText(this.teksalamat.getText());  // mengambil isi dari alamat lalu terhubung ke frame output 
+        output.rtout.setText(this.teksrt.getText());  // mengambil isi dari rt lalu terhubung ke frame output 
+        output.tfRW1.setText(this.teksrw.getText());  // mengambil isi dari rw lalu terhubung ke frame output 
+        output.kelout.setText(this.tekskel.getText());  // mengambil isi dari kelurahan lalu terhubung ke frame output 
+        output.kecout.setText(this.tekskec.getText());  // mengambil isi dari kecamatan lalu terhubung ke frame output 
+        output.kotaout.setText(this.tekskota.getText());  // mengambil isi dari kota lalu terhubung ke frame output 
+        output.agamaout.setText(this.boxagama.getSelectedItem().toString());  // mengambil isi dari agama lalu terhubung ke frame output 
+        output.statusout.setText(this.boxstatus.getSelectedItem().toString());  // mengambil isi dari status lalu terhubung ke frame output 
+        output.goldarout.setText(this.boxgoldar.getSelectedItem().toString());  // mengambil isi dari goldar lalu terhubung ke frame output 
+        output.pekerjaanout.setText(this.tekspekerjaan.getText());  // mengambil isi dari pekerjaan lalu terhubung ke frame output 
         
         if(rbLaki.isSelected()){
             output.tfJK1.setText(rbLaki.getText());
