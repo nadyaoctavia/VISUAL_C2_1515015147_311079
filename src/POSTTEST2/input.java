@@ -476,25 +476,6 @@ public class input extends javax.swing.JFrame {
                 
     }//GEN-LAST:event_registerActionPerformed
 
-    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
-        teksnama.setText("");
-        tekstempat.setText("");
-        tekstanggal.setText("");
-        teksalamat.setText("");
-        teksrt.setText("");
-        teksrw.setText("");
-        tekskel.setText("");
-        tekskec.setText("");
-        tekskota.setText("");
-        tekspekerjaan.setText("");
-        buttonGroup1.clearSelection();
-        buttonGroup2.clearSelection();
-        boxagama.setSelectedItem(false);
-        boxgoldar.setSelectedItem(false);
-        boxstatus.setSelectedItem(false);
-        
-    }//GEN-LAST:event_resetActionPerformed
-
     private void cusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cusActionPerformed
         JFileChooser OPEN = new JFileChooser();
         int returnVal = OPEN.showOpenDialog(null);
@@ -518,6 +499,25 @@ public class input extends javax.swing.JFrame {
             e.getMessage();
         }
     }//GEN-LAST:event_cusActionPerformed
+
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
+        teksnama.setText("");
+        tekstempat.setText("");
+        tekstanggal.setText("");
+        teksalamat.setText("");
+        teksrt.setText("");
+        teksrw.setText("");
+        tekskel.setText("");
+        tekskec.setText("");
+        tekskota.setText("");
+        tekspekerjaan.setText("");
+        buttonGroup1.clearSelection();
+        buttonGroup2.clearSelection();
+        boxagama.setSelectedItem(false);
+        boxgoldar.setSelectedItem(false);
+        boxstatus.setSelectedItem(false);
+
+    }//GEN-LAST:event_resetActionPerformed
 
     private void keluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarActionPerformed
         System.exit(0);
